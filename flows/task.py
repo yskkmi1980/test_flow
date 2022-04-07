@@ -1,3 +1,4 @@
+import prefect
 from prefect import Flow, task
 from prefect.storage import GitHub
 
