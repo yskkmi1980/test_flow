@@ -8,6 +8,8 @@ def task_2(x):
     return numpy.sum(x)
 
 with Flow("example") as flow:
+    logger = prefect.context.get("logger")
+    logger.info("Hello example!")
     x = 1
     y = task_2(x)
 
